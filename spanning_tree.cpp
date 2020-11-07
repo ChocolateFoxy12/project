@@ -1,37 +1,40 @@
 #include <iostream>
 
+#define V 7
+
 using namespace std;
+
+/*void prim(int graph[V][V])
+{
+    //lol
+}*/
 
 int main ()
 {
-    int a,b,c,d;
+    int graph[V][V]={{0,3,8,0,0,0,0},
+                     {3,0,0,4,1,0,0},
+                     {8,0,0,6,0,2,0},
+                     {0,4,6,0,2,5,0},
+                     {0,1,0,2,0,0,1},
+                     {0,0,2,5,0,0,6},
+                     {0,0,0,0,1,6,0}};
+
 
     cout<<"the graph looks as follows: "<<endl;
     cout<<endl;
 
-    cout<<"           a"<<endl;
-    cout<<"      1---------2"<<endl;
-    cout<<"      |         |"<<endl;
-    cout<<"    d |         | b"<<endl;
-    cout<<"      |         |"<<endl;
-    cout<<"      3---------4"<<endl;
-    cout<<"           c"<<endl;
-
-    cout<<endl;
-
-    cout<<"        (1,2,a)"<<endl;
-    cout<<"        (2,4,b)"<<endl;
-    cout<<"        (4,3,c)"<<endl;
-    cout<<"        (3,1,d)"<<endl;
+        cout<<"               1"<<endl;
+    cout<<"          (1)-----(4)"<<endl;
+    cout<<"        3/  4\\  2/  1\\"<<endl;
+    cout<<"      (0)     (3)     (6)"<<endl;
+    cout<<"        8\\  6/  5\\  6/"<<endl;
+    cout<<"          (2)-----(5)"<<endl;
+    cout<<"               2"<<endl;
 
     cout<<endl;
     cout<<endl;
 
-    cout<<"please introduce the weights of the edges: "<<endl;
-    cout<<"1,2,"; cin>>a;
-    cout<<"2,4,"; cin>>b;
-    cout<<"4,3,"; cin>>c;
-    cout<<"3,1,"; cin>>d;
+
 
 
 
